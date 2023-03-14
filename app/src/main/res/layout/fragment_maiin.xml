@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.MaiinFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/ashley"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:text="Rick And Morty"
+            android:textColor="@color/cyan"
+            android:textSize="@dimen/_30ssp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/locationRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:scrollbarSize="@dimen/_3sdp"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="horizontal" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/characterRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_7sdp"
+            android:padding="@dimen/_5sdp"
+            android:scrollbarSize="@dimen/_3sdp"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/emptyItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bu dünyada herhangi bir karakter bulunamadı"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        android:visibility="invisible"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

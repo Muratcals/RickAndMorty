@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DetailsFragment"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:id="@+id/detailsFragment">
+
+                <ImageView
+                    android:id="@+id/backPage"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:src="@drawable/back"
+                    android:layout_gravity="start"/>
+
+                <TextView
+                    android:id="@+id/characteraName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Karakter Ismi"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/avenir_black"
+                    android:textSize="20sp"/>
+            </Toolbar>
+
+            <ImageView
+                android:id="@+id/characterImage"
+                android:layout_width="275dp"
+                android:layout_height="275dp"
+                android:src="@drawable/rick_logo"
+                android:layout_gravity="center"
+                android:layout_marginVertical="20dp"
+                android:layout_marginHorizontal="50dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenir_black"
+                    android:text="Status:"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="3"/>
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:text="Alive"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="5"
+                    android:layout_marginHorizontal="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenir_black"
+                    android:text="Specy:"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="3"/>
+                <TextView
+                    android:id="@+id/specy"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:text="Human"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="5"
+                    android:layout_marginHorizontal="20dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenir_black"
+                    android:text="Gender:"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="3"/>
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:text="Female"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="5"
+                    android:layout_marginHorizontal="20dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenir_black"
+                    android:text="Origin:"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="3"/>
+                <TextView
+                    android:id="@+id/origin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:text="Earth(C-137)"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="5"
+                    android:layout_marginHorizontal="20dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenir_black"
+                    android:text="Location:"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="3"/>
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:text="Earth(C-137)"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="5"
+                    android:layout_marginHorizontal="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenir_black"
+                    android:text="Episodes:"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="3"/>
+                <TextView
+                    android:id="@+id/episodes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:text="1,2,3,4,5,6,22,51"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="5"
+                    android:layout_marginHorizontal="20dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenir_black"
+                    android:text="Created at(In API):"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="3" />
+                <TextView
+                    android:id="@+id/createdAt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:text="Human"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="5"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
